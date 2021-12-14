@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+        <title><Formulari></title>
+    </head>
+    <meta charset="utf8">
+    <body>
+        <h1>Informacion sobre el producto</h1>
+        <form action="https://ptsv2.com/t/smx2m08/post" method="post">
+            <style>
+                h1{text-align: center}
+                #t1{width: 20%;}
+                textarea{width: 360px;height: 120px}
+                #t2{width: 20%;}
+                #t3{width: 20%;}
+                #t4{background-color: black; color: white}
+                #t5{background-color: black; color: white}
+                #t6{background-color: black; color: white}
+                #t7{background-color: black; color: white}
+            </style>  
+             <fieldset id=t1>
+                <legend id="t4"><b>Datos basicos</b></legend>
+                <br/>
+                <b>Nombre</b>
+                <br/><input type="text" name="Nombre" value="" />
+                <br/>
+                <br/><label><b>Descripcion</b></label>
+                <br/>
+                <textarea name="Descripcion" id="descripcion"></textarea>
+                <br/>
+                <input name="Añadir contador de visitas" type="checkbox" value="Añadir contador de visitas" /><b>Añadir contador de visitas</b>
+                <br/>    
+            </fieldset>
+            <fieldset id=t2>
+                <legend id="t5"><b>Datos economicos</b></legend>
+                <br/><b>Precio</b> <input type="text" name="Precio" value="0" size="3" />€ <b>Impuestos</b>
+                <select id="so" name="so">
+                <option value="" selected="selected">4% </option>
+                <option value= "4%">4%</option>
+                <option value= "10%">10%</option>
+                <option value= "21%">21%</option>
+            </select>
+                <br/>
+                <b>Promocion</b>
+                <br/><input type="radio" name="Ninguno" value="Ninguno" /><b>Ninguno</b>
+                <br/><input type="radio" name="Transporte gratuito" value="Transporte gratuito" /><b>Transporte gratuito</b>
+                <br/><input type="radio" name="Descuento 5%" value="Descuento 5%" /><b>Descuento 5%</b>
+                <br/>
+            </fieldset>
+                <input type="submit" value="Enviar" id="t6">
+                <input type="submit" value="Borrar" id="t7">
+                <br/>
+            
+        </form>
+    </body>
+</html>
